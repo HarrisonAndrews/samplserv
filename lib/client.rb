@@ -42,7 +42,7 @@ class SamplParty
   end
 
   def makeus(options={})
-    SamplParty.post("/makeusr", :body => options)
+    SamplParty.post("/makeus", :body => options)
   end
 
   def morethan(options={})
@@ -77,6 +77,29 @@ class SamplParty
     SamplParty.get("/stop")
   end
 end
+
+
+
+party = SamplParty.new
+party.beat
+sleep(50.0)
+party.workit
+sleep(2.0)
+party.makeit
+sleep(1.0)
+party.doit
+sleep(1.0)
+party.makeus
+sleep(5.0)
+party.harder
+sleep(1.0)
+party.better
+sleep(1.0)
+party.faster
+sleep(1.0)
+party.stronger
+party.stop
+
 
 binding.pry
 
